@@ -1,0 +1,5 @@
+- x create html file
+- x install Alpine
+- x did the open/close example
+- .. set up repository
+- .. change to english/german button

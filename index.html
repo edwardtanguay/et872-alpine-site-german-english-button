@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//unpkg.com/alpinejs" defer></script>
+	<title>Alpine German/English Demo</title>
+</head>
+<body x-data="{open: true, language: 'german'}">
+	<h1>Alpine German/English Demo</h1>	
+	<button @click="open = !open">Toggle</button>
+
+	<div x-show="open">
+		Content...
+	</div>
+</body>
+</html>
