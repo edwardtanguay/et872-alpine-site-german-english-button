@@ -1,5 +1,10 @@
 - x create html file
 - x install Alpine
 - x did the open/close example
-- .. set up repository
-- .. change to english/german button
+- x set up repository
+- x change to english/german button
+- .. change a text from English to German
+- .. convert from two languages to three languages
+	- put login to function
+	- use if/else
+

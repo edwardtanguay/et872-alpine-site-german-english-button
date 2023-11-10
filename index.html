@@ -6,12 +6,12 @@
 	<script src="//unpkg.com/alpinejs" defer></script>
 	<title>Alpine German/English Demo</title>
 </head>
-<body x-data="{open: true, language: 'german'}">
-	<h1>Alpine German/English Demo</h1>	
-	<button @click="open = !open">Toggle</button>
+<body x-data="{language: 'English'}">
+	<h1 x-show="language === 'English'">Alpine German/English Demo</h1>	
+	<h1 x-show="language === 'German'">Alpine Deutsch/Englisch Demonstration</h1>	
+	<button @click="language = language === 'English' ? 'German' : 'English'"><span x-text="language"></span></button>
 
-	<div x-show="open">
-		Content...
-	</div>
+	<p x-show="language === 'English'">Welcome to this site.</p>
+	<p x-show="language === 'German'">Willkommen zu dieser Site.</p>
 </body>
 </html>
